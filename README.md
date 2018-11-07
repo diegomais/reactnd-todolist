@@ -6,6 +6,6 @@ You can use To-Do List to create a list of tasks items with checkboxes. Project 
 
 ## Project Setup
 
-* clone the Project - `git clone https://github.com/diegomais/react-udacity-to-do-list.git`
+* clone the Project - `git clone https://github.com/diegomais/React-ToDoList.git`
 * install the dependencies - `npm install`
 * start the server - `npm start`
