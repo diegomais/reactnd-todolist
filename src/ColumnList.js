@@ -1,5 +1,4 @@
 import React from 'react'
-import If from './If.js'
 import './ColumnList.css'
 
 const ColumnList = ({ tasks, columnTitle, updateTask, addTask }) => {
@@ -8,12 +7,12 @@ const ColumnList = ({ tasks, columnTitle, updateTask, addTask }) => {
     <div className="column-list">
       <h3>{columnTitle}</h3>
 
-      <If test={columnTitle === 'To Do'}>
+      {columnTitle === 'To Do' && (
         <form onSubmit={addTask}>
           <input type="text" />
           <button type="submit">Criar tarefa</button>
         </form>
-      </If>
+      )}
 
       <ul>
         {currentTasks.map(task => (
